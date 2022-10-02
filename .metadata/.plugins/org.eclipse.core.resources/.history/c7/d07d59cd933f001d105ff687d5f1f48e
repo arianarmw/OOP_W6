@@ -1,0 +1,49 @@
+package Exercise1;
+
+public class TestCylinder {
+	public static void main (String[] args) {
+		// Declare and allocate a new instance of cylinder 
+		// with default color, radius, and height
+		Cylinder c1 = new Cylinder();
+		System.out.println("Cylinder:" 
+				+ " radius=" + c1.getRadius() 
+				+ " height=" + c1.getHeight() 
+				+ " base area=" + c1.getArea() 
+				+ " volume=" + c1.getVolume());
+		
+		// Declare and allocate a new instance of cylinder 
+		// specifying height, with default color and radius
+		Cylinder c2 = new Cylinder(10.0); 
+		System.out.println("Cylinder:" 
+				+ " radius=" + c2.getRadius() 
+				+ " height=" + c2.getHeight() 
+				+ " base area=" + c2.getArea() 
+				+ " volume=" + c2.getVolume());
+		
+		// Declare and allocate a new instance of cylinder 
+		// specifying radius and height, with default color
+		Cylinder c3 = new Cylinder(2.0, 10.0);
+		System.out.println("Cylinder:" 
+				+ " radius=" + c3.getRadius() 
+				+ " height=" + c3.getHeight() 
+				+ " base area=" + c3.getArea() 
+				+ " volume=" + c3.getVolume());
+		
+		Circle c4 = new Circle();
+		c4.setRadius(5.5); 
+		System.out.println("radius is: " + c4.getRadius());
+		c4.setColor("green"); 
+		System.out.println("color is: " + c4.getColor());
+		// You cannot do the following because setRadius() returns void, which cannot be printed 
+		//System.out.println(c4.setRadius(4.4)); 
+		
+		Circle c5 = new Circle(5.5);
+		System.out.println(c5.toString());   // explicit call
+		
+		Circle c6 = new Circle(6.6);
+		System.out.println(c6.toString());  // explicit call 
+		System.out.println(c6); // println() calls toString() implicitly, same as above
+		System.out.println("Operator  '+'  invokes  toString()  too:  "  +  c6);  //  '+'  invokes toString() too 
+		
+	}
+}
