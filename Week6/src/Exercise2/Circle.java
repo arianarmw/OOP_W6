@@ -1,3 +1,10 @@
+/* Author : Ariana Rahmawati
+ * Date   : September 29th 2022
+ * Lesson : Inheritance, Abstract Class, and Interface
+ * Course : Object Oriented Programming (OOP)
+ * Program ini merupakan hasil revisi dan pengembangan dari modul yang diberikan oleh dosen
+ */
+
 package Exercise2;
 
 public class Circle extends Shape{
